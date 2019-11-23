@@ -1,0 +1,292 @@
+.u-header
+{
+    margin-bottom: 4.3rem;
+    background: #063d71;
+    padding: 2.64rem 2.64em 0 2.64rem;
+    box-sizing: border-box;
+    .top-area
+    {
+        overflow: hidden;
+        margin-bottom: 1.42rem;
+        .logo
+        {
+            img
+            {
+                max-width: 230px;
+            }
+            float: left;
+            width: 73%;
+        }
+        .search
+        {
+            width: 27%;
+            float: right;
+            position: relative;
+            text-align: right;
+            .icon
+            {
+                position: absolute;
+                right: 10.8rem;
+                top: 13px;
+                color: #063d71;
+                font-size: 14px;
+                font-weight: bolder;
+            }
+            input
+            {
+                background-color: #f2f2f2;
+                color: #43454b;
+                border: 0;
+                -webkit-appearance: none;
+                box-sizing: border-box;
+                font-weight: normal;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+                padding: 1rem 1.41575rem 1rem 2.7rem;
+                border-radius: 1px;
+            }
+        }
+        .nav-menu
+        {
+            display: none;
+        }
+    }
+    .bottom-area
+    {
+        overflow: hidden;
+        .top-nav-area
+        {
+            width: 73%;
+            float: left;
+            overflow: hidden;
+            .nav-item
+            {
+                padding: 1.618rem 1rem;
+                color: white;
+                cursor: pointer;
+                float: left;
+                font-weight: 400;
+            }
+        }
+        .shop-show-news
+        {
+            float: right;
+            width: 27%;
+            color: white;
+            padding: 1.218rem 1rem;
+            box-sizing: border-box;
+            text-align: right;
+            .money
+            {
+                margin-right: 0.327rem;
+            }
+            .goods
+            {
+                opacity: 0.5;
+                margin-right: 3.5rem;
+            }
+            .icon
+            {
+                font-size: 20px;
+            }
+        }
+    }
+    .bottom-nav
+    {
+        display: none;
+    }
+}
+@media(max-width:765px)
+{
+    .u-header
+    {
+        .top-area
+        {
+            .logo
+            {
+                img
+                {
+                    max-width: 210px;
+                }
+                float: left;
+                width: 73%;
+            }
+            .search
+            {
+                display: none;
+            }
+            .nav-menu
+            {
+                display: block;
+                cursor: pointer;
+                text-align: left;
+                float: right;
+                position: relative;
+                border: 2px solid white;
+                color: #ffffef;
+                box-shadow: none;
+                border-radius: 2px;
+                background-image: none;
+                padding: 0.82rem 0.875rem 0.82rem 2.6rem;
+                font-size: 14px;
+                max-width: 120px;
+                font-weight: bold;
+                .menu-icon
+                {
+                    position: absolute;
+                    left: 10px;
+                    top: 0.82rem;
+                    width: 14px;
+                    height: 20px;
+                    .menu-icon-item
+                    {
+                        position: absolute;
+                        left: 0;
+                        width: 14px;
+                        height:2px;
+                        border-radius: 1px;
+                        background: white;
+                        transform: rotate(0deg);
+                        opacity: 1;
+                    }
+                    .menu-icon45
+                    {
+                        transform-origin: left center;
+                        animation: rotateLine 0.3s forwards;
+                    }
+                    .menu-icon-45
+                    {
+                        transform-origin: left center;
+                        animation: rotateLine2 0.3s forwards;
+                    }
+                    .opacityLine
+                    {
+                        animation: opacityLine 0.3s forwards;
+                    }
+                    .item-top
+                    {
+                        top: 0;
+                    }
+                    .item-center
+                    {
+                        top: 5px;
+                    }
+                    .item-bottom
+                    {
+                        top: 10px;
+                    }
+                }
+            }
+        }
+        .bottom-area
+        {
+            .top-nav-area
+            {
+                height: 38rem;
+                .nav-item
+                {
+                    float: unset;
+                }
+            }
+            .shop-show-news
+            {
+                display: none;
+            }
+        }
+        .bottom-nav
+        {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+            background: #063d71;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+            display: block;
+            .nav-item
+            {
+                float: left;
+                width: 33.33%;
+                text-align: center;
+                height: 4.2rem;
+                line-height: 4.2rem;
+                color: white;
+                cursor: pointer;
+                border-top: 1px solid rgba(255,255,255,0.2);
+                border-right: 1px solid rgba(255,255,255,0.2);
+                position: relative;
+                box-sizing: border-box;
+                .icon
+                {
+                    font-size: 26px;
+                }
+                .goods-tip
+                {
+                    position: absolute;
+                    display: block;
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    line-height: 2;
+                    box-sizing: content-box;
+                    font-size: 0.75em;
+                    position: absolute;
+                    top: 0.5em;
+                    left: 50%;
+                    border-radius: 100%;
+                    border: 1px solid;
+                    background: white;
+                    color: black;
+                }
+            }
+            >div:nth-child(3)
+            {
+                border-right:0;
+            }
+        }
+    }
+}
+
+.mybox-leave-active,
+.mybox-enter-active,
+.mybox-leave,
+.mybox-enter-active {
+    transition: all .6s;
+    -moz-transition: all .6s;	/* Firefox 4 */
+    -webkit-transition: all .6s;	/* Safari 和 Chrome */
+    -o-transition: all .6s;
+}
+.mybox-leave-active,
+.mybox-enter {
+  height: 0px !important;
+}
+.mybox-leave,
+.mybox-enter-active {
+  height: 300px;
+}
+
+@keyframes rotateLine {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes rotateLine2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @keyframes opacityLine {
+    0%
+    {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
